@@ -38,9 +38,7 @@ jobs:
           fi
 workflows:
   version: 2
-  one_and_two:
+  print_hello_AND_print_world:
     jobs:
-      - one
-      - two:
-          requires:
-            - one
+      - print_hello
+      - print_world
